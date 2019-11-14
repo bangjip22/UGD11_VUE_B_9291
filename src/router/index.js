@@ -10,11 +10,17 @@ const routes = [
  path: '',
  component: DashboardLayout,
  children: [
- {
- name: 'UserController',
- path: '',
- component: loadView('userController')
- }
+    {
+        name: 'UserController',
+        path: '',
+        component: loadView('userController')
+    },
+{
+        name: 'KendaraanController',
+        path: '/kendaraan',
+        component: loadView('kendaraanController')
+},
+
  ]
  },
  ]
